@@ -54,7 +54,7 @@ resource "azurerm_linux_virtual_machine" "jumpbox" {
   size                = "Standard_D4_v3"
   admin_username      = "nadav"
   disable_password_authentication = false
-  admin_password      = "nadavmsft1234!"
+  admin_password      = "changeme"
   network_interface_ids = [
     azurerm_network_interface.nic.id,
   ]
